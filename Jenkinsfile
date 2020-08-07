@@ -19,7 +19,7 @@ pipeline {
             }
 
             post {
-                    sh curl -X POST "https://api.flock.com/hooks/sendMessage/b2e3891f-cf67-4c61-8776-655d77e1e446" -H "Content-Type: application/json" -d '{"text": "Docker Image ready at Jenkins"}'
+                    sh curl -X POST "https://api.flock.com/hooks/sendMessage/b2e3891f-cf67-4c61-8776-655d77e1e446" -H "Content-Type: application/json" -d '{"text": "Project Name: hello-world-webapp \nBuild Commit: ${commitId} \n Build Status: ${currentBuild.currentResult"}'
                 }t
             }
         }
