@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-		DOCKER_REGISTRY='hub.docker.com/sadaithal'
+		DOCKER_REGISTRY='hub.docker.com/master123xxx'
 		DOCKER_CREDS='training'
 	}
 
